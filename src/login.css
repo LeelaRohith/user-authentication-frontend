@@ -25,6 +25,7 @@
     color: #fff;
     padding: 10px 20px;
   }
+
   
   input[type="submit"]:hover {
     background: #2276d6;
@@ -33,6 +34,7 @@
   .button {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   
   .login {

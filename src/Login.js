@@ -13,9 +13,9 @@ function Login() {
       .then(function (response) {
         console.log(response.data.token);
         localStorage.setItem("token", response.data.token);
-        enqueueSnackbar("Successfully Logged in", {
+        enqueueSnackbar("Login Success", {
           variant: "success",
-          autoHideDuration: 1000,
+          autoHideDuration: 5000,
         });
         navigate("/homepage");
       })
@@ -60,9 +60,19 @@ function Login() {
               }}
             />
           </div>
+
           <div className="button">
             <button onClick={login}>Login</button>
           </div>
+          <br></br>
+          <a
+            // onClick={() => {
+            //   navigate("/forgotpassword");
+            // }}
+            href="/forgotpassword"
+          >
+            Forgot password
+          </a>
         </div>
       </div>
     </div>
